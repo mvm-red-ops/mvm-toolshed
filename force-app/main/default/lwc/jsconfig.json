@@ -24,11 +24,14 @@
             "c/invoiceSpotData": [
                 "invoiceSpotData/invoiceSpotData.js"
             ],
-            "c/invoiceSpotDataFileUpload": [
-                "invoiceSpotDataFileUpload/invoiceSpotDataFileUpload.js"
-            ],
             "c/loadingSpinner": [
                 "loadingSpinner/loadingSpinner.js"
+            ],
+            "c/checkDataScheduleMatch": [
+                "checkDataScheduleMatch/checkDataScheduleMatch.js"
+            ],
+            "c/fileUpload": [
+                "fileUpload/fileUpload.js"
             ]
         }
     },
