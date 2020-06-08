@@ -1,0 +1,15 @@
+<template>
+    <div class="work-area">
+        <div if:true={invoiceSpotData} class="tool-detail-area selected">
+            <c-invoice-spot-data 
+                onspinnerhandler={spinnerHandler} >
+            </c-invoice-spot-data>
+        </div> 
+        <div if:false={selectedTool} class="tool-detail-area default">
+            <c-no-tool-display></c-no-tool-display>
+        </div>
+        <div if:true={isLoading}>
+            <c-loading-spinner></c-loading-spinner>
+        </div>          
+    </div>
+</template>

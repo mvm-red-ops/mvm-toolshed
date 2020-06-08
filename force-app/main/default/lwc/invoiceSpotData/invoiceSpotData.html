@@ -1,0 +1,25 @@
+<template>
+    <div class="container">
+        <div class="section file-upload" if:false={fileUploaded}>
+            <c-invoice-spot-data-file-upload 
+                my-record-id={myRecordId}
+                onfileupload={uploadHandler}
+            ></c-invoice-spot-data-file-upload>
+        </div>
+        <div class="batch-id-container" if:true={batchId}>
+            <h2>Your batch has successfully started!</h2>
+            <div class='instructions'>
+                <p>Check on its progress by</p>
+                <ol>
+                    <li>1. Go to 'Setup'</li>
+                    <li>2. Search for 'Apex Jobs'</li>
+                    <li>3. Look for job where id  = {batchId}</li>
+                    <li>4. Check its status</li>
+                </ol>
+            </div>
+
+            
+
+        </div>
+    </div>      
+</template>

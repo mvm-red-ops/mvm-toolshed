@@ -1,0 +1,20 @@
+.work-area {
+    text-align: center;
+    background: rgba(120, 120, 120, .35);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.tool-detail-area {
+    border-radius: 5px;
+    padding: 70px 0;
+    text-align: center;
+}
+
+.default {
+    background: hsla(0, 0%, 98%, 0.55);;
+}
+
+.selected {
+    background: rgba(255, 254, 254, 0.911);;
+}

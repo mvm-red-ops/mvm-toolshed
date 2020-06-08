@@ -1,0 +1,44 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+        "paths": {
+            "c/mainToolshedWrapper": [
+                "mainToolshedWrapper/mainToolshedWrapper.js"
+            ],
+            "c/toolshedHeader": [
+                "toolshedHeader/toolshedHeader.js"
+            ],
+            "c/toolbelt": [
+                "toolbelt/toolbelt.js"
+            ],
+            "c/workArea": [
+                "workArea/workArea.js"
+            ],
+            "c/toolcard": [
+                "toolcard/toolcard.js"
+            ],
+            "c/noToolDisplay": [
+                "noToolDisplay/noToolDisplay.js"
+            ],
+            "c/invoiceSpotData": [
+                "invoiceSpotData/invoiceSpotData.js"
+            ],
+            "c/invoiceSpotDataFileUpload": [
+                "invoiceSpotDataFileUpload/invoiceSpotDataFileUpload.js"
+            ],
+            "c/loadingSpinner": [
+                "loadingSpinner/loadingSpinner.js"
+            ]
+        }
+    },
+    "include": [
+        "**/*",
+        "../../../../.sfdx/typings/lwc/**/*.d.ts"
+    ],
+    "typeAcquisition": {
+        "include": [
+            "jest"
+        ]
+    }
+}

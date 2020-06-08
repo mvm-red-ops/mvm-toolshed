@@ -1,0 +1,28 @@
+.slds-item {
+    background: white;
+}
+
+.slds-item-selected{
+    background: rgba(170, 115, 115, 0.75);
+}
+
+
+.toolcard {
+    padding: 20px;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    transition: all 500ms;
+    overflow: hidden;
+}
+
+.toolcard:hover{
+    box-shadow: rgba(2, 8, 20, 0.2) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.09) 0px 0.175em 0.5em;
+    transform: translateY(-1px) scale(1.04);
+}
+
+.selected {
+    background: rgba(237, 240, 102, 0.75);
+    box-shadow: 0px 0px 4px #4195fc;
+}

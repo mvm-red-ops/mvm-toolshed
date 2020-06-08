@@ -1,0 +1,13 @@
+<template>
+    <div class="file-upload-div">
+        <h1 class="instruction-header">1. Upload Invoice Numbers / Flight Dates</h1>
+        <lightning-file-upload
+            label="Invoice Number Excel"
+            name="fileUploader"
+            accept=[.csv]
+            record-id={myRecordId}
+            onuploadfinished={handleUploadFinished}
+            multiple>
+        </lightning-file-upload>
+    </div>
+</template>

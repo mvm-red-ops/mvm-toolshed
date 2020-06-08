@@ -1,0 +1,20 @@
+<template>
+  <div class="toolbelt" >
+    <ul class="slds-has-dividers_around-space">
+      <li class="slds-item">
+        <div class="slds-tile slds-tile_board">
+          <h1 class="slds-tile__title slds-truncate">
+            Toolbelt
+          </h1>
+        </div>
+      </li>
+    </ul>
+    <template for:each={tools} for:item="tool">
+      <c-toolcard 
+        key={tool.id} 
+        tool={tool} 
+        ontoolselected={toolSelectionHandler}>
+      </c-toolcard>
+    </template>
+  </div>
+</template>

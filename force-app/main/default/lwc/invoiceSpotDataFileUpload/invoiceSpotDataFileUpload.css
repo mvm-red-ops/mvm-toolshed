@@ -1,0 +1,10 @@
+.file-upload-div {
+    padding: 15px 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.instruction-header{
+    font-weight: bold;
+    font-size: 1.1rem;
+}

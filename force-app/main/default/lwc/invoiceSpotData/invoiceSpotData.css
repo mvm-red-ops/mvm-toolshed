@@ -1,0 +1,61 @@
+.container {
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  height:600px;
+}
+.section {
+  overflow:hidden;
+  transition:flex 0.3s ease-out;
+  height:auto;
+  flex: 1;
+}
+
+
+.section.collapsed {
+  flex: 0;
+}
+
+
+* {
+  box-sizing:border-box;
+}
+body {
+  margin:0;
+  padding:10vh 10vw;
+  font-family:arial;
+}
+p {
+  margin:10px;
+}
+.container {
+  margin:0 auto;
+  max-width:600px;
+  border-radius:3px;
+}
+
+button {
+  display:block;
+  --webkit-appearance:none;
+  font-size:18px;
+  border:none;
+  border-radius:3px;
+  background:#2196F3;
+  color:white;
+  margin:15px auto;
+  padding:15px;
+  cursor:pointer;
+  
+  transition:box-shadow 0.2s ease-out;
+}
+
+.batch-id-container {
+  font-size: 1.3rem;
+}
+.batch-id-container h2 {
+  font-weight: bold;
+  color: red;
+}
+.instructions {
+  font-weight: lighter;
+}

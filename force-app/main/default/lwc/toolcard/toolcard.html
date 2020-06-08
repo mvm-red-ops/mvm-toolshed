@@ -1,0 +1,25 @@
+<template>
+    <ul class="tool-list" > 
+        <li class="slds-item" if:false={tool.selected} data-my-id={tool.id} onclick={onClickToolSelectionHandler}>
+            <article class="slds-tile slds-tile_board toolcard" >
+                <div class="slds-tile__detail">
+                <p class="slds-text-heading_medium">{tool.title}</p>
+                <p class="slds-truncate">
+                    {tool.description}
+                </p>
+                </div>
+            </article>
+        </li>
+        <li class="slds-item selected" if:true={tool.selected} data-my-id={tool.id} onclick={onClickToolSelectionHandler}>
+            <article class="slds-tile slds-tile_board toolcard" >
+                <div class="slds-tile__detail">
+                <p class="slds-text-heading_medium">{tool.title}</p>
+                <p class="slds-truncate">
+                    {tool.description}
+                </p>
+                </div>
+            </article>
+        </li>
+    </ul>
+
+</template>
