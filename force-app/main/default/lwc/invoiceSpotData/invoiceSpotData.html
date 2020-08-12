@@ -1,10 +1,12 @@
 <template>
     <div class="container">
         <div class="section file-upload" if:false={fileUploaded}>
-            <c-file-upload 
+            <c-file-upload-toolshed
                 my-record-id={myRecordId}
-                onfileupload={uploadHandler}
-            ></c-file-upload>
+                oninvoicefileupload={invoiceSpotFileUploadHandler}
+                event-title="invoicefileupload"
+                upload-title="1. Upload Invoice Numbers / Flight Dates"
+            ></c-file-upload-toolshed>
         </div>
         <div class="batch-id-container" if:true={batchId}>
             <h2>Your batch has successfully started!</h2>

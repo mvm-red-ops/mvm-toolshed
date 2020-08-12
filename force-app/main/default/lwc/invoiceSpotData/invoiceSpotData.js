@@ -11,8 +11,9 @@ export default class InvoiceSpotData extends LightningElement {
         this.template.querySelector('.section.collapsible').classList.toggle('collapsed');
     }
 
-    async uploadHandler(event){
-        
+    async invoiceSpotFileUploadHandler(event){
+        window.console.log('uploading file in invoice component..')
+
         // Get the list of uploaded files
         const uploadedFiles = event.detail.files;
         const id = uploadedFiles[0].documentId

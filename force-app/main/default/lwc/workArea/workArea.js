@@ -5,7 +5,7 @@ export default class WorkArea extends LightningElement {
     @api isLoading = false
 
     get invoiceSpotData() {
-        if(!this.selectedTool){
+        if(!this.selectedTool || this.selectedTool.title !== 'Invoice Spot Data' ){
             return null
         }
         else {      
@@ -16,7 +16,7 @@ export default class WorkArea extends LightningElement {
     }
 
     get checkDataScheduleMatch(){
-        if(!this.selectedTool){
+        if(!this.selectedTool || this.selectedTool.title !== 'Check Data Schedule Match'){
             return null
         }
         else {      

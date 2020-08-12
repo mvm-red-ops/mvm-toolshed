@@ -1,5 +1,4 @@
 import { LightningElement, track } from 'lwc';
-import readCSV from '@salesforce/apex/PPTrafficUploader.readCSVFile';
 
 export default class MainToolshedWrapper extends LightningElement {
     @track selectedTool
@@ -9,6 +8,12 @@ export default class MainToolshedWrapper extends LightningElement {
           description: "Attach Invoice Numbers to Spot Data by uploading formtated CSV.",
           id: '1',
           selected: false
+      },
+      {
+        title: "Check Data Schedule Match",
+        description: "Upload Paid Programming check data Excel sheets and automatically attach to correct Schedules. Return an Excel sheet with check data that did not find a matching Schedule and an Excel sheet that contains Schedules that did not have matching checks.",
+        id: '6',
+        selected: false
       },
       {
           title: "PDF Parser",
@@ -57,9 +62,5 @@ export default class MainToolshedWrapper extends LightningElement {
 
       this.tools = updatedTools
     }
-
-    handleFileUpload(event){
-        window.console.log(JSON.stringify(event))
-      }
       
 }

@@ -32,6 +32,9 @@
             ],
             "c/fileUpload": [
                 "fileUpload/fileUpload.js"
+            ],
+            "c/fileUploadToolshed": [
+                "fileUploadToolshed/fileUploadToolshed.js"
             ]
         }
     },

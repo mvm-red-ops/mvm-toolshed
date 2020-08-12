@@ -1,6 +1,6 @@
-import { LightningElement, api} from 'lwc';
+import { LightningElement,api } from 'lwc';
 
-export default class InvoiceSpotDataFileUpload extends LightningElement {
+export default class FileUploadToolshed extends LightningElement {
     @api myRecordId
     @api uploadHandler
     @api spinnerHandler
